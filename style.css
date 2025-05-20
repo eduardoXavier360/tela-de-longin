@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/Imagem\ do\ WhatsApp\ de\ 2025-05-19\ à\(s\)\ 22.15.11_4872950d.jpg');
+ background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.conteiner {
+ margin-bottom: 150px;
+}
+
+.title {
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: rbga(0, 0, 0, 0.5);
+    padding: 60px;
+       color: rgb(236, 241, 241);
+  text-shadow:
+    0 0 5px rgb(13, 21, 21),
+    0 0 10px rgb(8, 11, 11),
+    0 0 20px rgb(14, 16, 16);
+    margin-top: 50px;
+}
+
+.username {
+    
+    color: rgb(236, 241, 241);
+  text-shadow:
+    0 0 5px rgb(13, 21, 21),
+    0 0 10px rgb(8, 11, 11),
+    0 0 20px rgb(14, 16, 16);
+    
+}
+.password {
+   
+    color: rgb(236, 241, 241);
+  text-shadow:
+    0 0 5px rgb(13, 21, 21),
+    0 0 10px rgb(8, 11, 11),
+    0 0 20px rgb(14, 16, 16);
+}
+
+.submit {
+    font-size: 25px;
+    padding: 10px 20px;
+       color: rgb(236, 241, 241);
+  text-shadow:
+    0 0 5px rgb(13, 21, 21),
+    0 0 10px rgb(8, 11, 11),
+    0 0 20px rgb(14, 16, 16);
+    border:none ;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+input {
+    background-color: transparent;
+    width: 100px;
+   border: none;
+     border-bottom: 2px solid white; /* Linha embaixo */
+  outline: none; /* Remove contorno ao focar */
+  padding: 4px 0;
+  color:#fff;
+font-size: 15px;
+  
+}
+.comprimento {
+    width: 105px;
+}
+
+  #light {
+    
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,200,0.6), transparent 70%);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+
