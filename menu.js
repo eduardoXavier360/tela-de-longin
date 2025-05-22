@@ -15,3 +15,16 @@
   }
 
   pulse();  
+
+
+
+    function verificarSenha() {
+      const senhaCorreta = "Edu@rdo1234";
+      const senhaDigitada = document.getElementById("senha").value;
+
+      if (senhaDigitada === senhaCorreta) {
+        window.location.href = "menu.html";
+      } else {
+        alert("Senha incorreta! Acesso negado 🚫");
+      }
+    }

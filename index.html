@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">     
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>longin</title>
+    <title>login</title>
 </head>
 
 <body>
-<div class="background">
-  <div id="light"></div>
-</div>
+  
+  <div class="background">
+    <div id="light"></div>
+  </div>
 
+  <div class="conteiner">
+    <h1 class="title">Login</h1>
 
-    <div class="conteiner">
-        <h1 class="title">Login</h1>
-        <form action="longin.php" method="post">
+    <!-- Não precisa de <form> se for usar só JS -->
+    <label class="username" for="username">Username</label>
+    <input type="text" name="username" id="username" required>
+    <br><br>
 
-            <label class="username" for="username">Username</label>
-            <input type="text" name="username" id="username" required>
-            <br>
-            <br>
-            <label class="password" for="password">Password</label>
-            <input class="comprimento" type="password" name="password" id="password" required>
-            <br>
-            <button class="submit" type="submit">Connect</button>
-            <br>
-        </form>
-    </div>
+    <label class="password" for="senha">Password</label>
+    <input class="comprimento" id="senha" type="password" placeholder="senha">
+    <br>
+
+    <button onclick="verificarSenha()" class="submit">Connect</button>
+    <br>
+  </div>
+
+    <script src="menu.js"></script>
 </body>
-<script src="script.js"></script>
+   
+
+
 </html>
