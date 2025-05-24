@@ -2,37 +2,37 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Alienígena</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <!-- Título e descrição para compartilhamento -->
+<meta property="og:title" content="Acesso Alienígena">
+<meta property="og:description" content="Entre apenas se estiver pronto para abandonar o comum.">
+
+<!-- Link para sua imagem -->
+<meta property="og:image" content="https://exemplo.com/imagem-preview.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://exemplo.com">
+
 </head>
 
 <body>
-  
-  <div class="background">
-    <div id="light"></div>
-  </div>
+  <header>
+    <button class="sing-in" id="sing-in">
+      <i class="fa-solid fa-user-astronaut"> </i> IDENTIFICAR-SE</button>
 
-  <div class="conteiner">
-    <h1 class="title">Login</h1>
+  </header>
 
-    <!-- Não precisa de <form> se for usar só JS -->
-    <label class="username" for="username">Username</label>
-    <input type="text" name="username" id="username" required>
-    <br><br>
+  <main class="container">
+    <h1 class="title">ACESSO RESTRITO!</h1>
+    <p class="submit">"Entre apenas se estiver pronto para abandonar o comum."</p>
+  </main>
 
-    <label class="password" for="senha">Password</label>
-    <input class="comprimento" id="senha" type="password" placeholder="senha">
-    <br>
-
-    <button onclick="verificarSenha()" class="submit">Connect</button>
-    <br>
-  </div>
-
-    <script src="menu.js"></script>
+  <script src="script.js"></script>
 </body>
-   
 
 
 </html>
