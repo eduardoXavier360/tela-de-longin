@@ -12,6 +12,6 @@ function verificarSenha(event) {
   if (senhaDigitada === senhaCorreta) {
     window.location.href = "menu.html";
   } else {
-    alert("Senha incorreta!");
+    alert("Senha incorreta!❌");
   }
 }
