@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #0f0f0f, #000000);
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.alien-container {
+  border: 2px solid #00ffcc;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 700px;
+  background: rgba(0, 255, 204, 0.05);
+  box-shadow: 0 0 15px #00ffcc88;
+  text-align: center;
+}
+
+.alien-title {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.alien-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #aaffff;
+}
+
+.glow {
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}

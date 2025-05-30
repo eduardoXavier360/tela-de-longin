@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-menu.css">
-    <title>Central Vialática</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal do Viajante</title>
+    <link rel="stylesheet" href="style-menu.css" />
 </head>
 
-<body class="nave-espacial">
-    <div class="painel"></div>
-    <h1>🛸Central de Controle Galático</h1>
-    <p>Bem vindo comandante!</p>
-    <div class="botoes"></div>
-    <button onclick="alert('carregando mapa...')">📜 Mapa estrelar</button>
-    <button onclick="alert('Missões sendo analizadas...')">🛰️Misões Ativas</button>
-    <button onclick="alert('Transmitindo logs...')">📡 Logs da Terra </button>
-    <button onclick="logout()">🚪 Desembarcar</button>
+<body>
+    <header>
+        <h1 class="title">Bem-vindo, Viajante!</h1>
+    </header>
 
-<script src="script.js"></script>
-    </body>
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este é um portal para explorar o mundo do desenvolvimento web: HTML, CSS e JavaScript.</p>
+        </section>
+
+        <section id="html">
+            <h2>Aprenda HTML</h2>
+            <p>HTML é a estrutura das páginas. Você aprenderá como organizar títulos, parágrafos, imagens e muito mais.
+            </p>
+            <button class="btn-neon" id="btn-01" onclick="window.location.href='Pagina01.html'">Iniciar</button>
+        </section>
+
+        <section id="css">
+            <h2>Aprenda CSS</h2>
+            <p>CSS é responsável pelo estilo visual. Vamos personalizar cores, layouts, animações e tornar tudo bonito!
+            </p>
+            <button class="btn-neon">iniciar</button>
+        </section>
+
+        <section id="javascript">
+            <h2>Aprenda JavaScript</h2>
+            <p>JavaScript dá vida às suas páginas! Interações, validações, efeitos e muito mais serão cobertos aqui.</p>
+            <button class="btn-neon">iniciar</button>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Quer falar com a gente? Em breve essa seção terá um formulário de contato.</p>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 
 </html>

@@ -1,3 +1,4 @@
+   
     const botao = document.getElementById("sing-in");
     botao.addEventListener("click", function (event) {
       event.preventDefault();
@@ -15,3 +16,4 @@ function verificarSenha(event) {
     alert("Senha incorreta!❌");
   }
 }
+
