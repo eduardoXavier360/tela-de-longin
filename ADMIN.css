@@ -22,7 +22,7 @@ body {
   width: 400px;
   height: 500px;
   background: #021010;
-  border: 3px solid #00ff9f;
+  border: 3px solid  #00fff7aa;
   box-shadow: 0 0 20px #00ff9f, 0 0 60px #00ff9f40;
   border-radius: 20px;
   overflow: hidden;
@@ -82,22 +82,22 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
-  color: #00ff9f;
+  color: #00fff7aa;
   margin-bottom: 10px;
 }
 
 .alien-loginBx h2 i {
   margin-right: 10px;
-  color: #00ff9f;
+  color:  #00fff7aa;
   text-shadow: 0 0 5px #00ff9f;
 }
 
 input, button {
   padding: 12px 20px;
   border-radius: 30px;
-  border: 2px solid #00ff9f;
+  border: 2px solid  #00fff7aa;
   background: transparent;
-  color: #00ff9f;
+  color:  #00fff7aa;
   font-size: 16px;
   transition: 0.3s;
 }
@@ -113,7 +113,7 @@ input:focus {
 }
 
 button {
-  background: #00ff9f;
+  background:  #00fff7aa;
   color: #000;
   font-weight: 700;
   cursor: pointer;

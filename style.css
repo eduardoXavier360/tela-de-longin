@@ -1,111 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
-}
-
 body {
-  background-image: url('./img/Imagem\ do\ WhatsApp\ de\ 2025-05-19\ à\(s\)\ 22.15.11_4872950d.jpg'); /* Substitua com sua imagem */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #000 0%, #02020a 80%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: #00ffcc;
-  padding: 20px;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #00fff7;
+  overflow: hidden;
 }
 
-header {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+.portal-container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
+
+.portal {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 40px 15px #00fff7aa,
+    inset 0 0 60px 20px #00fff7cc,
+    0 0 100px 35px #00fff7bb;
+  animation: pulseGlow 3s ease-in-out infinite;
+  background: radial-gradient(circle at center, #001a1a 60%, transparent 90%);
+  overflow: visible;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 40px 15px #00fff7aa,
+      inset 0 0 60px 20px #00fff7cc,
+      0 0 100px 35px #00fff7bb;
+  }
+  50% {
+    box-shadow:
+      0 0 60px 25px #00fff7ff,
+      inset 0 0 80px 30px #00fff7ff,
+      0 0 120px 50px #00fff7ff;
+  }
+}
+
+/* Rings animadas */
+
+.rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.rings span {
+  position: absolute;
+  border: 2px solid #00fff7bb;
+  border-radius: 50%;
+  animation: rotateRing 8s linear infinite;
+  opacity: 0.6;
+  box-shadow: 0 0 20px #00fff7cc;
+}
+
+.rings span:nth-child(1) {
+  width: 280px;
+  height: 280px;
+  top: 10px;
+  left: 10px;
+  animation-duration: 10s;
+}
+
+.rings span:nth-child(2) {
+  width: 240px;
+  height: 240px;
+  top: 30px;
+  left: 30px;
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.rings span:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  top: 60px;
+  left: 60px;
+  animation-duration: 6s;
+}
+
+.rings span:nth-child(4) {
+  width: 160px;
+  height: 160px;
+  top: 90px;
+  left: 90px;
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Texto do portal */
+
+.portal-title {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #00fff7;
+  text-shadow: 0 0 20px #00fff7aa;
+}
+
+.portal-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #0ff;
+  text-shadow: 0 0 10px #00fff7aa;
+}
+
+/* Botão personalizado */
 
 .sing-in {
-  background: linear-gradient(135deg, #00ffcc, #00332e);
+  background: linear-gradient(135deg, #00fff7, #004d40);
   color: #000;
   border: none;
   border-radius: 30px;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 12px 30px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc80;
+  box-shadow: 0 0 15px #00fff7cc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sing-in:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #00fff7ff;
 }
 
 .sing-in i {
   margin-right: 8px;
-}
-
-.container {
-  text-align: center;
-  margin-top: 100px;
-  padding: 20px;
-  max-width: 90%;
-}
-
-.title {
-  font-size: 3rem;
-  color: red;
-  text-shadow: 0 0 10px #00ffcc, 0 0 30px #00ffcc;
-  margin-bottom: 20px;
-}
-
-.submit {
-  font-size: 1.2rem;
-  color: #aefce3;
-  text-shadow: 0 0 8px #00ffcc40;
-  line-height: 1.4;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .submit {
-    font-size: 1rem;
-  }
-
-  .sing-in {
-    padding: 8px 16px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .submit {
-    font-size: 0.9rem;
-  }
-
-  .sing-in {
-    padding: 7px 14px;
-    font-size: 12px;
-  }
-
-  header {
-    top: 10px;
-    right: 10px;
-  }
 }

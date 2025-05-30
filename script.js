@@ -16,4 +16,3 @@ function verificarSenha(event) {
     alert("Senha incorreta!❌");
   }
 }
-
